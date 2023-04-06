@@ -18,38 +18,36 @@
 body {
   background-color: var(--BG-COLOR);
   font-family: var(--FONT-TEXT);
+  font-size: var(--FONT-SIZE);
   min-height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-size: var(--FONT-SIZE);
 }
 
 .container {
-  max-width: 360px;
-  margin: 0 auto;
+  background-color: var(--CONTAINER-BG-COLOR);
+  text-align: center;
+  border-radius: 20px;
+  max-width: 350px;
 }
 
 .image-container {
-  background-color: var(--CONTAINER-BG-COLOR);
-  padding: 18px;
-  border-radius: 17px;
-  text-align: center;
-  margin: 0 1em;
+  padding: 15px;
 }
 
 .image-container img {
   width: 100%;
-  border-radius: 12px;
+  /* border: solid; */
+  border-radius: 15px;
 }
 
 .text {
-  padding: 22px 10px;
+  padding: 15px 15px 0px;
+  /* border: solid; */
 }
 
-.text h2 {
-  color: var(--HEADING-COLOR);
-  padding-bottom: 15px;
-}
 .text p {
-  color: var(--PARAGRAPH-COLOR);
+  /* border: solid; */
+  margin: 20px;
 }
