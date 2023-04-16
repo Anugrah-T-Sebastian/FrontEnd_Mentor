@@ -6,10 +6,10 @@
   --BG-IMAGE: url("./images/pattern-background-desktop.svg");
   --BG-IMAGE-MOBILE: url("./images/pattern-background-mobile.svg");
   --BG-COLOR: hsl(225, 100%, 94%);
-  --BUTTON-COLOR: hsl(245, 75%, 52%);
+  --HYPERLINK-COLOR: hsl(245, 75%, 52%);
   --CONTAINER-COLOR: white;
   --PLAN-CONTAINER-COLOR: hsl(225, 100%, 98%);
-  --HYPERLINK-COLOR: hsl(224, 23%, 55%);
+  --HYPERLINK-HOVER-COLOR: hsl(224, 23%, 55%);
   --TEXT-COLOR: hsl(223, 47%, 23%);
   --FONT-SIZE: 16px;
 }
@@ -75,6 +75,15 @@ body {
 
 .plan-container a {
   margin-left: 70px;
+  text-decoration: underline;
+}
+.plan-container a:active,
+a:visited {
+  color: var(--HYPERLINK-COLOR);
+}
+.plan-container a:hover,
+a:focus {
+  color: var(--HYPERLINK-COLOR);
   text-decoration: none;
 }
 
@@ -90,20 +99,36 @@ body {
 
 .user-actions {
   padding: 15px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.user-actions li {
+.user-actions {
   padding: 10px;
+  margin-top: 20px;
 }
 
 .user-actions a {
   text-decoration: none;
+  display: block;
+  padding: 15px;
 }
 
-.user-actions li:first-child {
-  border: solid;
-  background-color: var(--BUTTON-COLOR);
+.user-actions a:first-child {
+  color: white;
+  background-color: var(--HYPERLINK-COLOR);
+  border-radius: 12px;
+}
+.user-actions a:first-child:hover {
+  background-color: var(--BG-COLOR);
+}
+
+.user-actions a:nth-child(2) {
+  margin-top: 20px;
+}
+.user-actions a:nth-child(2):hover {
+  font-weight: 900;
+  color: var(--TEXT-COLOR);
 }
