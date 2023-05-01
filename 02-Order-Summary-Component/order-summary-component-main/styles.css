@@ -118,7 +118,7 @@ a:focus {
 
 .user-actions a:first-child {
   color: white;
-  background-color: var(--HYPERLINK-COLOR);
+  background-color: var(--HYPERLINK-HOVER-COLOR-COLOR);
   border-radius: 12px;
 }
 .user-actions a:first-child:hover {
